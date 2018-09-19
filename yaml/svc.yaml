@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: wise2c-svc
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+  - protocol: TCP
+    port: 30080
+    targetPort: 80
